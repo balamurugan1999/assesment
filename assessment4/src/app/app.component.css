@@ -1,0 +1,23 @@
+span{
+    color: red;
+}
+input{
+    margin-left: 50px;
+}
+input.temp{
+    margin-left: 25px;
+}
+form{
+    margin-left: 600px;
+    margin-top: 50px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 140px;
+    background-color:lightblue;
+}
+body{
+    background-color: lightcyan;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

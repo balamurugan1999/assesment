@@ -1,0 +1,66 @@
+<body><h1 style="text-align: center;color:brown;">Register</h1>
+  <form class="container">
+  <div class="form">
+    <label for="fname">Name:</label>
+    <input type="text" name="fname" id="fname" placeholder="Enter your name" [(ngModel)]="name" #fname (change)="checkname()">&nbsp;
+    <span *ngIf="!check[0]">please enter a valid name</span>
+  </div><br>
+  <div>
+    <label for="uname">Username:</label>
+    <input type="text" name="uname" id="uname"placeholder="Enter username" [(ngModel)]="username" #uname (change)="checkusername()">&nbsp;
+    <span *ngIf="!check[1] && count[1]>0">please enter a valid username</span>
+  </div><br>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="passwor" id="passwor"placeholder="Enter password" [(ngModel)]="password" #passwor (change)="checkpassword()">&nbsp;
+    <span *ngIf="!check[2] && count[2]>0">please enter a valid password </span>
+  </div><br>
+  <div>
+    <label for="dob">Dob:</label>
+    <input type="text" name="do" id="do"placeholder="dd-mm-yyyy" [(ngModel)]="dob" #do (change)="checkdob()">&nbsp;
+    <span *ngIf="!check[3] && count[3]>0">please enter a valid Dob </span>
+  </div><br>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="emai" id="emai"placeholder="Enter your mail id" [(ngModel)]="emailid" #emai (change)="checkemailid()">&nbsp;
+    <span *ngIf="!check[4] && count[4]>0">please enter a valid email id</span>
+  </div><br>
+  <div>
+    <label for="phone">Phone No:</label>
+    <input class="temp" type="text" name="phon" id="phon"placeholder="Enter your phone no" [(ngModel)]="phn" #phon (change)="checkphn()">&nbsp;
+    <span *ngIf="!check[5] && count[5]>0">please enter a valid email id</span>
+  </div><br>
+   <div>
+    <label for="gender">Gender:</label>
+    <select  >
+      <option>Male</option>
+      <option>Female</option>
+      <option>Others</option>
+    </select>
+    <span *ngIf="!check[6] && count[6]>0">please enter a valid input</span>
+  </div><br>
+  <div>
+    <label for="age">Age:</label>
+    <input type="text" name="ag" id="ag" placeholder="Enter yourage" [(ngModel)]="age" #ag (change)="checkage()">&nbsp;
+    <span *ngIf="!check[7] && count[7]>0">please enter a valid email id</span>
+  </div><br>
+   <div>
+    <label for="national">Nationality:</label>
+    <select name='national'>
+      <option>India</option>
+      <option>US</option>
+      <option>UK</option>
+      <option>Others</option>
+    </select>
+    <span *ngIf="!check[8] && count[8]>0">please enter a valid input</span>
+  </div><br>
+  <div>
+    <label for="photo">Photo:</label>
+    <input type="text" name="phot" id="phot" placeholder="upload photo" [(ngModel)]="photo" #phot (change)="checkphoto()">&nbsp;
+    <span *ngIf="!check[9] && count[9]>0">please enter a valid email id</span>
+  </div><br>
+  <div>
+    <button type="submit" (click)="checkinfo()">Submit</button>
+  </div>
+  </form>
+  </body>
